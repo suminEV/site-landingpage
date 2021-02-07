@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Разработка Landing Page</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<!-- Кнопка вверх -->
+	<i id="go_to_top" class="fas fa-arrow-alt-circle-up go_to_top" aria-hidden="true"></i>
+
+	<!-- Модальное окно Заказать разработку Landing Page -->
+	<div id="modalOrder" class="modalOrder">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<!-- <span class="closeOrder">&times;</span> -->
+			<i class="closeOrder fas fa-window-close"></i>
+			<div class="info">
+				<h2>Заказать разработку Landing Page</h2>
+				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Всеми о запятой алфавит рыбного деревни продолжил решила ты, однажды проектах грамматики вопрос снова жизни но то образ они ручеек?</p>
+				<p>Для этого вы можете использовать один из следующих способов:</p>
+				<p>1) Напишите нам в социальных сетях.</p>
+				<p class="modalOrderSocial">
+					<a href="#"><img src="img/social/vk.png" alt="Вконтакте" title="Вконтакте"></a>
+					<a href="#"><img src="img/social/ok.png" alt="Одноклассники" title="Одноклассники"></a>
+					<a href="#"><img src="img/social/fb.png" alt="Фейсбук" title="Фейсбук"></a>
+				</p>
+				<p>2) Позвоните нам по телефону.</p>
+				<p class="modalOrderPhone"><span>+7 (111) 11-11-111</span></p>
+				<p>3) Или напишите нам используя форму ниже.</p>
+				<form action="https://formspree.io/mozgkota@mail.ru" class="msgOrder" target="_blank" method="POST">
+					<input type="hidden" name="iForm" value="Отправка данных из формы заказа разработки Landing Page"><br>
+					<input type="text" name="name" placeholder="Имя" required><br>
+					<input type="text" name="phone" placeholder="Телефон" required><br>
+					<input type="email" name="email" placeholder="Почта" required><br>
+					<textarea name="msgText" placeholder="Сообщение" required></textarea><br>
+					<button type="submit">Отправить</button>
+				</form>
+
+				<button id="btnPrice" class="btnPrice collapsible">Расчитать примерную стоимость проекта</button>
+				
+				<div class="contentBlockHidden" id="contentBlockHidden">
+					<form action="https://formspree.io/mozgkota@mail.ru" target="_blank" method="POST">	
+						<h3>Основные услуги</h3>
+						<div class="block-select">
+							<select name="services" size="1" id="services">
+								<option value="standard">Стандартный набор услуг (дизайн, верстка, установка на CMS и загрузка на хостинг) - 21000руб.</option>
+								<option value="individual">Индивидуальный набор услуг</option>
+							</select>
+							<div class="select_arrow"></div>
+						</div>
+						<div class="individualChoiceOfServices" id="individualChoiceOfServices">
+							<label class="control control-checkbox">
+								<input type="checkbox" name="developmentOfPrototypeAndDesign" id="developmentOfPrototypeAndDesign"><span>Разработка прототипа и дизайн (6000руб.)</span><br>
+								<div class="control_indicator"></div>
+							</label>
+							<label class="control control-checkbox">
+								<input type="checkbox" name="templateLayout" id="templateLayout"><span>Верстка шаблона сайта (5000руб.)</span><br>
+								<div class="control_indicator"></div>
+							</label>
+							<label class="text-mobile-padding"><input type="number" value="1000" name="writingUniqueText" id="writingUniqueText" class="writingUniqueText"><span>Написание уникального текста (300руб. - тысяча символов)</span><br></label>
+							<label class="control control-checkbox">
+								<input type="checkbox" name="installationOnCMS" id="installationOnCMS"><span>Установка на CMS ModX (8000руб.)</span><br>
+								<div class="control_indicator"></div>
+							</label>
+							<label class="control control-checkbox">
+								<input type="checkbox" name="uploadToHosting" id="uploadToHosting"><span>Загрузка на хостинг и подключение домена (2000руб.)</span>
+								<div class="control_indicator"></div>
+							</label>
+						</div>
+						<h3>Дополнительный набор услуг</h3>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. О оксмокс строчка грустный он всемогущая дорогу напоивший рыбного! Моей?</p>
+						<div class="additionalServices">
+							<label class="control control-checkbox">
+								<input type="checkbox" name="calculator" id="calculator"><span>Калькулятор расчета стоимости услуг (3000руб.)</span><br>
+								<div class="control_indicator"></div>
+							</label>
+							<label class="control control-checkbox">
+								<input type="checkbox" name="chat" id="chat"><span>Онлайн-чат для общения с клиентами (1000руб. + тариф)</span><br>
+								<div class="control_indicator"></div>
+							</label>
+							<label class="control control-checkbox">
+								<input type="checkbox" name="backСall" id="backСall"><span>Кнопка обратного звонка (1000руб. + тариф)</span>
+								<div class="control_indicator"></div>
+							</label>
+						</div>
+						<div class="totalAmount">
+							<p><span class="text">Общая сумма</span> <span class="number" id="totalPrice">20000</span><span class="text">руб.</span></p>
+						</div>
+					</form>
+					<h3>Этапы оплаты</h3>
+					<p>В целях обоюдной безопасности оплата за выполненные работы происходит частями, на каждом этапа отдельно после выполнения работы и передачи готовых материалов заказчику.</p>
+					<div class="stagesOfPayment" id="stagesOfPayment"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Модальное окно Заказать обратный звонок -->
+	<div id="modalCall" class="modalCall">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<!-- <span class="closeCall">&times;</span> -->
+			<i class="closeCall fas fa-window-close"></i>
+			<div class="info">
+				<h2>Заказать обратный звонок</h2>
+				<p>Здесь вы можете указать свой номер телефона, нажать кнопку "Отправить" и мы свяжемся с вами в ближайшее время.</p>
+				<form action="https://formspree.io/mozgkota@mail.ru" target="_blank" method="POST">
+					<input type="hidden" name="iForm" value="Отправка данных из формы обратного звонка"></p>
+					<input type="text" name="phone" placeholder="Телефон в формате +7 000 0000000" required><br>
+					<button type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="top-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 text-left">
+					<span>company@gmail.com</span>	
+				</div>
+				<div class="col-md-4 text-center">
+					<span>+7 (111) 11-11-111</span>
+				</div>
+				<div class="col-md-4 text-right">
+					<span class="text-desktop">24/7 Служба поддержки</span>
+					<span class="text-mobile">24/7</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="blockHeaderAndInfo">
+		
+		<div class="header-sec" id="stickyBlock">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-4">
+						<div class="blockLogo">
+							<p class="logo">Разработка<br><span class="letter-l-and-p">L</span>anding <span class="letter-l-and-p">P</span>age</p>
+							<div class="menu-mobyle">
+								<p onclick="openNav()" class="menu-icon"><i class="fa fa-bars mobile-menu-icon" aria-hidden="true"></i></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="menu-and-icons">
+							<span class="menu">
+								<a class="go_to" href="advantages">Преимущества LP</a>
+								<a class="go_to" href="about-us">О нас</a>
+								<a class="go_to" href="standard-set-of-services">Услуги</a>
+								<a class="go_to" href="portfolio">Портфолио</a>
+								<a class="go_to" href="contacts">Контакты</a>
+							</span>
+							<span class="icons">
+								<a href="#"><img src="img/social/vk.png" alt="Вконтакте" title="Вконтакте"></a>
+								<a href="#"><img src="img/social/ok.png" alt="Одноклассники" title="Одноклассники"></a>
+								<a href="#"><img src="img/social/fb.png" alt="Фейсбук" title="Фейсбук"></a>
+							</span>
+						</div>
+						<!-- <i class="fa fa-bars mobile-menu-icon" aria-hidden="true"></i> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="info-banner">
+			<div class="fon-img">
+				<div class="fon-color">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="fon-girl">
+									<div class="content">
+										<div class="info-block">
+											<h1>Создание Landing Page<br>для покорения новых вершин</h1>
+											<br><br>
+											<p>Получите новый поток клиентов<br>и освойте новые бизнес-высоты</p>
+											<br>
+											<p>Разработка за 10 дней / от 20 000 р.</p>
+											<br>
+											<button class="button-left" id="modalBtnCall">Заказать обратный звонок</button><button class="button-right" id="modalBtn1">Заказать разработку Landing Page</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="advantages" id="advantages">
+		<div class="container">
+			<h2>Преимущества <span>Landing Page</span></h2>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="block-1">
+						<h3>Высокая конверсия и гибкость</h3>
+						<hr>
+						<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+					</div>
+					<div class="block-3">
+						<h3>Фокусность</h3>
+						<hr>
+						<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="block-2">
+						<h3>Быстрый запуск</h3>
+						<hr>
+						<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.  Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+					</div>
+					<div class="block-4">
+						<h3>Быстрый запуск</h3>
+						<hr>
+						<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="about-us" id="about-us">
+		<div class="container">
+			<h2>О нас</h2>
+			<div class="row">
+				<div class="col-lg-6">
+					<p class="info">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+				</div>
+				<div class="col-lg-6 about-us-block-hidden">
+					<div class="row">
+						<!-- Первая строка с иконками -->
+						<div class="col-lg-3 block">
+							<img src="img/about-us/icon-1.png" alt="Качество">
+						</div>
+						<div class="col-lg-3 block">
+							<img src="img/about-us/icon-2.png" alt="Бесплатные консультации">
+						</div>
+						<div class="col-lg-3 block">
+							<img src="img/about-us/icon-3.png" alt="Пунктуальность">
+						</div>
+						<div class="col-lg-3 block">
+							<img src="img/about-us/icon-4.png" alt="Опытная команда">
+						</div>
+
+						<!-- Вторая строка с подписями -->
+						<div class="col-lg-3 block">
+							<p>Качество</p>
+						</div>
+						<div class="col-lg-3 block">
+							<p>Бесплатные консультации</p>
+						</div>
+						<div class="col-lg-3 block">
+							<p>Пунктуальность</p>
+						</div>
+						<div class="col-lg-3 block">
+							<p>Опытная команда</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="counter">
+		<div class="container">
+			<h2><span>Мы работаем</span> уже длительное время <span>в сфере Web-разработок</span></h2>
+			<div class="row mobile-hidden">
+				<div class="col-lg-2"></div>
+				<div class="col-sm-6 col-md-3 col-lg-2">
+					<div class="circle" id="circles-1"></div>
+					<p class="caption">Дни</p>
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-2">
+					<div class="circle" id="circles-2"></div>
+					<p class="caption">Часы</p>
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-2">
+					<div class="circle" id="circles-3"></div>
+					<p class="caption">Минуты</p>
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-2">
+					<div class="circle" id="circles-4"></div>
+					<p class="caption">Секунды</p>
+				</div>
+				<div class="col-lg-2"></div>
+			</div>
+			<p>И весь накопленный за это время опыт готовы вложить в ваши проекты</p>
+		</div>
+	</div>
+
+	<div class="standard-set-of-services" id="standard-set-of-services">
+		<div class="container">
+			<h2>Стандартный набор услуг и этапы выполнения</h2>
+
+			<!-- Этап 1 -->
+			<div class="row">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<div class="row stage-1">
+						<div class="col-lg-2">
+							<div class="block-1">
+								<p><b>1 этап</b></p>
+								<img src="img/standard-set-of-services/circle.png" alt="Круг" class="standard-set-of-services-block-hidden">
+								<div class="vertical-line standard-set-of-services-block-hidden"></div>
+							</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="block-2">
+								<h3>Разработка прототипа</h3>
+								<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+				
+				<!-- Этап 2 -->
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<div class="row stage-2">
+						<div class="col-lg-2">
+							<div class="block-1">
+								<p><b>2 этап</b></p>
+								<img src="img/standard-set-of-services/circle.png" alt="Круг" class="standard-set-of-services-block-hidden">
+								<div class="vertical-line standard-set-of-services-block-hidden"></div>
+							</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="block-2">
+								<h3>Разработка дизайна</h3>
+								<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+
+				<!-- Этап 3 -->
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<div class="row stage-3">
+						<div class="col-lg-2">
+							<div class="block-1">
+								<p><b>3 этап</b></p>
+								<img src="img/standard-set-of-services/circle.png" alt="Круг" class="standard-set-of-services-block-hidden">
+								<div class="vertical-line standard-set-of-services-block-hidden"></div>
+							</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="block-2">
+								<h3>Верстка шаблона сайта</h3>
+								<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+
+				<!-- Этап 4 -->
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<div class="row stage-4">
+						<div class="col-lg-2">
+							<div class="block-1">
+								<p><b>4 этап</b></p>
+								<img src="img/standard-set-of-services/circle.png" alt="Круг" class="standard-set-of-services-block-hidden">
+								<div class="vertical-line standard-set-of-services-block-hidden"></div>
+							</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="block-2">
+								<h3>Написание уникальных текстов (копирайтинг/рерайтинг)</h3>
+								<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+
+				<!-- Этап 5 -->
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<div class="row stage-5">
+						<div class="col-lg-2">
+							<div class="block-1">
+								<p><b>5 этап</b></p>
+								<img src="img/standard-set-of-services/circle.png" alt="Круг" class="standard-set-of-services-block-hidden">
+								<div class="vertical-line standard-set-of-services-block-hidden"></div>
+							</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="block-2">
+								<h3>Установка на CMS</h3>
+								<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+
+				<!-- Этап 6 -->
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<div class="row stage-6">
+						<div class="col-lg-2">
+							<div class="block-1">
+								<p><b>6 этап</b></p>
+								<img src="img/standard-set-of-services/circle.png" alt="Круг" class="standard-set-of-services-block-hidden">
+								<div class="vertical-line standard-set-of-services-block-hidden"></div>
+							</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="block-2">
+								<h3>Загрузка на хостинг и подключение доменного имени</h3>
+								<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+			</div>
+			<button id="modalBtn2">Заказать разработку Landing Page</button>
+		</div>
+	</div>
+
+	<div class="interlayer"></div>
+
+	<div class="result-of-work">
+		<div class="container">
+			<h2>Итоги нашей работы</h2>
+			<p class="text-top">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+			<div class="row">
+				<div class="col-lg-5 block-img">
+					<img src="img/result-of-work/adaptive-design.png" alt="Адаптивный дизайн">
+				</div>
+				<div class="col-lg-7 block-info">
+					<h3>Адаптивный дизайн</h3>
+					<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+				</div>
+			</div>
+
+			<img src="img/result-of-work/delimiter.png" alt="Разделитель" class="delimiter">
+
+			<div class="row">
+				<div class="col-lg-5 block-img mobile-img">
+					<img src="img/result-of-work/cross-browser-compatibility.png" alt="Кроссбраузерность">
+				</div>
+				<div class="col-lg-7 block-info">
+					<h3>Кроссбраузерность</h3>
+					<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+				</div>
+				<div class="col-lg-5 block-img desktop-img">
+					<img src="img/result-of-work/cross-browser-compatibility.png" alt="Кроссбраузерность">
+				</div>
+			</div>
+
+			<img src="img/result-of-work/delimiter.png" alt="Разделитель" class="delimiter">
+
+			<div class="row">
+				<div class="col-lg-5 block-img">
+					<img src="img/result-of-work/validation.png" alt="Валидация">
+				</div>
+				<div class="col-lg-7 block-info">
+					<h3>Валидация html5 и css3</h3>
+					<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+				</div>
+			</div>
+
+			<button id="modalBtn3">Заказать разработку Landing Page</button>
+
+		</div>
+	</div>
+
+	<div class="an-additional-set-of-services">
+		
+		<div class="container">
+			<h2>Дополнительный набор услуг</h2>
+			<p class="text-top">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+		</div>
+		
+		<div class="block-service">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 img-hidden-mobile">
+						<img src="img/an-additional-set-of-services/calculator-1.png" alt="Калькулятор">
+					</div>
+					<div class="col-lg-6">
+						<h3>Калькулятор расчета стоимости услуг</h3>
+						<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+					</div>
+					<div class="col-lg-3">
+						<img src="img/an-additional-set-of-services/calculator-2.png" alt="Калькулятор">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="block-service">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 img-hidden-mobile">
+						<img src="img/an-additional-set-of-services/online-chat-1.png" alt="Онлайн-чат">
+					</div>
+					<div class="col-lg-6">
+						<h3>Онлайн-чат для общение с клиентами</h3>
+						<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+					</div>
+					<div class="col-lg-3">
+						<img src="img/an-additional-set-of-services/online-chat-2.png" alt="Онлайн-чат">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="block-service">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 img-hidden-mobile">
+						<img src="img/an-additional-set-of-services/back-call-1.png" alt="Обратный звонок">
+					</div>
+					<div class="col-lg-6">
+						<h3>Кнопка обратного звонка</h3>
+						<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+					</div>
+					<div class="col-lg-3">
+						<img src="img/an-additional-set-of-services/back-call-2.png" alt="Обратный звонок">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button id="modalBtn4">Заказать разработку Landing Page</button>
+			
+	</div>
+
+	<div class="portfolio" id="portfolio">
+		<div class="container">
+			<h2>Портфолио</h2>
+			<p class="text-top">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+			<!-- <div class="row block-img">
+				<div class="col-lg-12">
+					<a href="#" target="_blank" alt="Поиск и лечение вирусов на сайте" title="Поиск и лечение вирусов на сайте">
+						<figure>
+							<img src="img/portfolio/foto-1.png" alt="Снимок">
+							<i class="fas fa-search-plus"></i>
+						</figure>
+					</a>
+
+					<a href="#" target="_blank" alt="Грузоперевозки" title="Грузоперевозки">
+						<figure>
+							<img src="img/portfolio/foto-2.png" alt="Снимок">
+							<i class="fas fa-search-plus"></i>
+						</figure>
+					</a>
+
+					<a href="#" target="_blank" alt="Юридическая компания" title="Юридическая компания">
+						<figure>
+							<img src="img/portfolio/foto-3.png" alt="Снимок">
+							<i class="fas fa-search-plus"></i>
+						</figure>
+					</a>
+				</div>
+			</div> -->
+			<div class="block-img">
+				<a href="#" target="_blank" alt="Поиск и лечение вирусов на сайте" title="Поиск и лечение вирусов на сайте">
+					<figure>
+						<img src="img/portfolio/foto-1.png" alt="Снимок">
+						<i class="fas fa-search-plus"></i>
+					</figure>
+				</a>
+				<a href="#" target="_blank" alt="Поиск и лечение вирусов на сайте" title="Поиск и лечение вирусов на сайте">
+					<figure>
+						<img src="img/portfolio/foto-2.png" alt="Снимок">
+						<i class="fas fa-search-plus"></i>
+					</figure>
+				</a>
+				<a href="#" target="_blank" alt="Поиск и лечение вирусов на сайте" title="Поиск и лечение вирусов на сайте">
+					<figure>
+						<img src="img/portfolio/foto-3.png" alt="Снимок">
+						<i class="fas fa-search-plus"></i>
+					</figure>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="contacts" id="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>Форма обратной связи</h2>
+					<!-- <form action="#" target="_blank" method="POST"> -->
+					<form action="https://formspree.io/mozgkota@mail.ru" target="_blank" method="POST">
+						<input type="hidden" name="iForm" value="Отправка данных из формы обратной связи"></p>
+						<input type="text" name="firstname" placeholder="Имя" required><br>
+						<input type="text" name="phone" placeholder="Телефон" required><br>
+						<input type="text" name="email" placeholder="E-mail" required><br>
+						<textarea name="message" placeholder="Сообщение" required></textarea><br>
+						<button type="submit">Отправить</button>
+					</form>
+				</div>
+				<div class="col-lg-6">
+					<h2>Контакты</h2>
+					<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+					<span><i class="fas fa-phone"></i> +7 (111) 11-11-111</span><br>
+					<span><i class="fas fa-phone"></i> +7 (111) 11-11-111</span><br>
+					<span><i class="fas fa-envelope"></i> theemail@gmail.com</span><br>
+					<span><i class="fas fa-globe"></i> site.org</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<span class="pos-left">Разработка Landing Page</span>
+			<span class="pos-center">2018</span>
+			<button class="pos-right" id="modalBtn5">Заказать разработку Landing Page</button>
+		</div>
+	</div>
+
+	<!-- Мобильное меню -->
+	<div id="mobyle-menu" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<div class="overlay-content">
+			<a class="go_to" href="advantages">Преимущества LP</a>
+			<a class="go_to" href="about-us">О нас</a>
+			<a class="go_to" href="standard-set-of-services">Услуги</a>
+			<a class="go_to" href="portfolio">Портфолио</a>
+			<a class="go_to" href="contacts">Контакты</a>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+// Стили наследуются от большего экрана к меньшему
+
+//Extra large: ≥1200px - От максимального и ниже
++media-breakpoint-down(xl)
+
+
+//Large: ≥992px - От 1200px и ниже
++media-breakpoint-down(lg)
+	.modalCall,
+	.modalOrder
+		z-index: 100
+		.modal-content
+			width: 100%
+			margin: 0
+	.blockHeaderAndInfo
+		.info-banner
+			.fon-img
+				.fon-color
+					.fon-girl
+						background-image: none
+						.content
+							.info-block
+								width: 100%
+								.button-left,
+								.button-right
+									width: 49%
+
+
+//Medium: ≥768px - От 992px и ниже
++media-breakpoint-down(md)
+	.top-sec
+		.text-left,
+		.text-center,
+		.text-right
+			text-align: center
+		.text-right
+			.text-desktop
+				display: none
+			.text-mobile
+				display: inline-block
+	.blockHeaderAndInfo
+		.header-sec
+			.menu-and-icons
+				display: none
+			.blockLogo
+				padding: 65px 0
+				.logo
+					display: inline-block
+					float: left
+					top: 0
+				.menu-icon
+					float: right
+					margin-top: 10px
+					.mobile-menu-icon
+						// border: 1px solid #000
+						display: inline-block
+						font-size: 60px
+						color: #666
+						cursor: pointer
+						&:hover
+							color: #acaaaa
+		.sticky
+			.blockLogo
+				padding: 20px 0
+		.info-banner
+			.fon-img
+				.fon-color
+					.fon-girl
+						.content
+							height: auto
+							.info-block
+								margin: 65px 0
+								height: auto
+								top: 0
+								.button-left,
+								.button-right
+									margin: 5px 0
+									float: none
+									width: 100%
+	.modalOrder
+		.modal-content
+			.info
+				form.msgOrder
+					textarea
+						width: 100%
+	.about-us
+		.about-us-block-hidden
+			display: none
+	.standard-set-of-services
+		.standard-set-of-services-block-hidden
+			display: none
+	.result-of-work
+		.block-info
+			text-align: center
+		.desktop-img
+			display: none
+		.mobile-img
+			display: block
+	.an-additional-set-of-services
+		.block-service
+			.img-hidden-mobile
+				display: none
+	.advantages
+		.block-2
+			background-image: url(../img/advantages/3.png);
+		.block-3
+			background-image: url(../img/advantages/2.png);
+
+//Small: ≥576px - От 768px и ниже
++media-breakpoint-down(sm)
+	.result-of-work
+		p.text-top
+			margin: 25px 0 45px 0
+	.an-additional-set-of-services
+		p.text-top
+			margin: 25px 0 45px 0
+	.portfolio
+		p.text-top
+			margin: 25px 0 45px 0
+		.block-img
+			figure
+				img
+					height: 150px
+	.footer
+		.container
+			button
+				display: none
+
+//Extra small: >0 - От 576px и ниже
++media-breakpoint-down(xs)
+	.advantages
+		.block-1,
+		.block-2,
+		.block-3,
+		.block-4
+			background-image: none
+			width: 100%
+			padding-left: 0
+	.counter
+		.mobile-hidden
+			display: none
+	.result-of-work
+		.delimiter
+			width: 100%
+	.portfolio
+		.block-img
+			figure
+				img
+					height: 100px
+	.contacts
+		form
+			input
+				width: 100%
+	.modalCall,
+	.modalOrder
+		.modal-content
+			padding: 50px 20px
+	.modalOrder
+		.modal-content
+			.info
+				form.msgOrder
+					input
+						width: 100%
+				button.btnPrice
+					width: 100%
+			.contentBlockHidden
+				.individualChoiceOfServices
+					.text-mobile-padding
+						padding-left: 120px
+						position: relative
+						.writingUniqueText
+							padding: 5px
+							left: 10px
+							position: absolute
+							// margin: 10px 20px
+							margin: 20px -10px
+	.modalCall
+		.modal-content
+			.info
+				form
+					input
+						width: 100%
+
+
+/*==========  Mobile First  ==========*/
+// Стили наследуются от меньшего экрана к большему
+
+//Extra small: <576px - От минимального и выше
++media-breakpoint-up(xs)
+
+
+//Small: ≤576px - От 576px и выше
++media-breakpoint-up(sm)
+
+
+//Medium: ≤768px - От 768px и выше
++media-breakpoint-up(md)
+
+
+//Large: ≤992px - От 992px и выше
++media-breakpoint-up(lg)
+
+
+//Extra large: ≤1200px - От 1200px и максимально
++media-breakpoint-up(xl)
+

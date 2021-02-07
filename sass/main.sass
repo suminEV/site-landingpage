@@ -1,0 +1,975 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	// line-height: 1.25
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+h1, h2, h3, h4, h5, h6
+	font-family: $default-font-h
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+// Потолок
+.top-sec
+	background-color: #313131
+	.text-left
+		text-align: left
+		&:before
+			content: url(../img/top/envelope.png)
+			position: relative
+			top: 3px
+	.text-center
+		text-align: center
+		&:before
+			content: url(../img/top/phone.png)
+			position: relative
+			top: 3px
+	.text-right
+		text-align: right
+		&:before
+			content: url(../img/top/clock.png)
+			position: relative
+			top: 3px
+		.text-desktop
+			display: inline-block
+		.text-mobile
+			display: none
+	.text-left,
+	.text-center,
+	.text-right
+		margin-top: 9px
+		margin-bottom: 9px
+		span
+			margin-left: 5px
+			color: #909aa3
+			font-family: "Myriad Pro"
+			font-size: 20px
+			font-weight: 400
+			// letter-spacing: 1.6px
+
+.blockHeaderAndInfo
+	// border: 5px solid red
+	position: relative
+	// padding-top: 212px
+	.header-sec
+		height: 212px
+		width: 100%
+		background-color: #fff
+		position: absolute
+		top: -212px
+		.logo
+			color: #6c6c6c
+			font-family: "Comic Sans MS"
+			font-size: 36px
+			font-weight: 400
+			// letter-spacing: 2.88px
+			line-height: 1
+			top: 66px
+			position: relative
+			.letter-l-and-p
+				color: #2f97ff
+				font-weight: 700
+		.menu-and-icons
+			top: 91px
+			position: relative
+			text-align: right
+			.menu
+				a
+					color: #6c6c6c
+					font-family: "Times New Roman PSMT"
+					// letter-spacing: 1.28px
+					padding-right: 20px
+					margin: 0
+			.icons
+				img
+					padding-left: 10px
+					cursor: pointer
+					&:hover
+						opacity: 0.7
+		.mobile-menu-icon
+			display: none
+	.sticky
+		position: fixed
+		height: 120px
+		width: 100%
+		z-index: 50
+		top: 0
+		border-bottom: 5px solid yellow
+		.blockLogo
+			padding: 15px 0
+			.logo
+				top: 0
+		.menu-and-icons
+			top: 0
+			padding: 40px 0
+	.info-banner
+		margin-top: 212px
+		.fon-img
+			background-image: url("../img/info-banner/fon-img.png")
+			background-repeat: no-repeat
+			background-size: cover
+			.fon-color
+				background-color: rgba(62, 192, 245, 0.75)
+				.fon-girl
+					background-image: url("../img/info-banner/img-girl.png")
+					background-repeat: no-repeat
+					background-position: right bottom
+					.content
+						height: 600px
+						.info-block
+							top: 65px
+							position: relative
+							background-color: rgba(0, 0, 0, 0.7)
+							width: 680px
+							height: 470px
+							padding: 40px 20px
+							h1
+								color: #ffff33
+								font-family: "Arial"
+								font-size: 36px
+								font-weight: 600
+								// letter-spacing: 2.88px
+								line-height: 1.25
+							p
+								color: #ffffff
+								font-family: "Times New Roman"
+								font-size: 24px
+								font-weight: 400
+								// letter-spacing: 1.92px
+								line-height: 1.25
+							button
+								background-color: #ffff33
+								padding: 17px 10px
+								border: none
+								color: #3c3c3c
+								font-size: 20px
+								&:hover
+									background-color: #ffff7c
+									cursor: pointer
+							.button-left
+								float: left
+							.button-right
+								float: right
+
+.advantages
+	padding: 55px 0 70px 0
+	h2
+		color: #383838
+		font-size: 30px
+		font-weight: 600
+		// letter-spacing: 2.4px
+		text-align: center
+		padding: 0
+		margin-bottom: 55px
+		span
+			color: #2f97ff
+	.block-1,
+	.block-2,
+	.block-3,
+	.block-4
+		background-repeat: no-repeat
+		padding-left: 180px
+		background-position: 30px 5px
+		margin-bottom: 70px
+		hr
+			width: 163px
+			height: 2px
+			background-color: #efd000
+			border: none
+			margin: 15px 0
+		h3
+			color: #434343
+			font-family: "Times New Roman PS"
+			font-size: 20px
+			font-weight: 600
+			// letter-spacing: 1.6px
+		p
+			font-family: "Times New Roman PSMT"
+	.block-1
+		background-image: url("../img/advantages/1.png")
+	.block-2
+		background-image: url("../img/advantages/2.png")
+	.block-3
+		background-image: url("../img/advantages/3.png")
+	.block-4
+		background-image: url("../img/advantages/4.png")
+
+.about-us
+	padding: 55px 0 55px 0
+	background-image: url("../img/about-us/fon.png")
+	background-attachment: fixed
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	h2
+		color: #336666
+		font-size: 30px
+		font-weight: 600
+		// letter-spacing: 2.4px
+		text-align: center
+		margin-bottom: 55px
+	.info
+		color: #336666
+		font-size: 16px
+		font-weight: 400
+		// letter-spacing: 1.28px
+		font-family: "Times New Roman PSMT"
+	.block
+		text-align: center
+		padding: 0
+		img
+			margin-bottom: 10px
+		p
+			color: #336666
+			// font-family: "Myriad Pro"
+			font-size: 16px
+			font-weight: 600
+			// letter-spacing: 1.28px
+			line-height: 1.25
+
+.counter
+	padding: 55px 0 55px 0
+	h2
+		color: #383838
+		font-size: 30px
+		font-weight: 600
+		// letter-spacing: 2.4px
+		text-align: center
+		padding: 0
+		margin-bottom: 55px
+		span
+			color: #2f97ff
+	.circle
+		text-align: center
+	p
+		color: #747474
+		font-size: 16px
+		// letter-spacing: 1.28px
+		font-family: "Times New Roman PSMT"
+		text-align: center
+	.circles-integer
+		color: #2f97ff
+		font-family: "Times New Roman PS - Bold MT"
+		font-size: 48px
+		font-weight: 600
+		// letter-spacing: 3.84px
+		bottom: 5px
+		position: relative
+	.caption
+		position: relative
+		bottom: 65px
+		color: #2f97ff
+		font-family: "Times New Roman PSMT"
+		font-size: 16px
+		font-weight: 400
+		// letter-spacing: 1.28px
+
+.standard-set-of-services
+	padding: 55px 0 70px 0
+	background-image: url("../img/standard-set-of-services/fon.png")
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	h2
+		color: #336666
+		font-size: 30px
+		font-weight: 600
+		// letter-spacing: 2.4px
+		text-align: center
+		margin-bottom: 55px
+	.block-1
+		img
+			position: absolute
+			top: 5px
+			right: 6px
+		.vertical-line
+			width: 2px
+			background-color: #336666
+			position: absolute
+			top: 5px
+			right: 15px
+		p
+			color: #336666
+			font-family: "Times New Roman PSMT"
+			font-size: 18px
+			font-weight: 400
+			// letter-spacing: 1.44px
+	.block-2
+		h3
+			color: #336666
+			font-size: 18px
+			font-weight: 600
+			font-family: "Times New Roman PS - Bold MT"
+			// letter-spacing: 1.44px
+		p
+			color: #336666
+			font-size: 16px
+			font-weight: 400
+			font-family: "Times New Roman PSMT"
+			// letter-spacing: 1.28px
+			margin-bottom: 50px
+	.stage-1,
+	.stage-2,
+	.stage-3,
+	.stage-4,
+	.stage-5
+		.block-1
+			.vertical-line
+				height: 360px
+	.stage-6
+		.block-1
+			.vertical-line
+				height: 160px
+		.block-2
+			p
+				margin-bottom: 70px
+	button
+		background-color: #ffff33
+		border: none
+		padding: 15px 20px
+		color: #3b3b3b
+		font-family: "Times New Roman PSMT"
+		font-size: 20px
+		font-weight: 400
+		// letter-spacing: 1.6px
+		display: block
+		margin: auto
+		&:hover
+			background-color: #ffff7c
+			cursor: pointer
+
+.interlayer
+	background-image: url("../img/interlayer/fon.png")
+	height: 70px
+
+.result-of-work
+	padding: 55px 0 70px 0
+	background-color: #f6f6f6
+	h2
+		color: #336666
+		text-align: center
+		font-size: 30px
+		font-weight: 600
+		// letter-spacing: 2.4px
+	p.text-top
+		margin: 25px 150px 45px 150px
+		text-align: center
+		color: #336666
+		font-family: "Times New Roman PSMT"
+		font-size: 16px
+		font-weight: 400
+		// letter-spacing: 1.28px
+	.block-img
+		img
+			max-width: 100%
+			height: auto
+			margin: auto
+			display: block
+	.mobile-img
+		display: none
+	.desktop-img
+		display: block
+	.block-info
+		padding: 30px
+		h3
+			color: #336666
+			font-family: "Times New Roman PS - Bold MT"
+			font-size: 18px
+			font-weight: 600
+			// letter-spacing: 1.44px
+			margin-top: 20px
+		p
+			color: #336666
+			font-family: "Times New Roman PSMT"
+			font-size: 16px
+			font-weight: 400
+			// letter-spacing: 1.28px
+	.delimiter
+		margin: 70px auto
+		display: block
+	button
+		background-color: #ffff33
+		border: none
+		padding: 15px 20px
+		color: #3b3b3b
+		font-family: "Times New Roman PSMT"
+		font-size: 20px
+		font-weight: 400
+		// letter-spacing: 1.6px
+		display: block
+		margin: 70px auto 0
+		&:hover
+			background-color: #ffff7c
+			cursor: pointer
+
+.an-additional-set-of-services
+	padding: 55px 0 70px 0
+	h2
+		text-align: center
+		color: #336666
+		font-size: 30px
+		font-weight: 600
+		// letter-spacing: 2.4px
+	p.text-top
+		margin: 25px 150px 45px 150px
+		text-align: center
+		color: #336666
+		font-family: "Times New Roman PSMT"
+		font-size: 16px
+		font-weight: 400
+		// letter-spacing: 1.28px
+	.block-service
+		// background-color: #fafafa
+		background-color: #f6f6f6
+		margin-top: 30px
+		padding: 50px 0 50px 0px
+		text-align: center
+		img
+			max-width: 100%
+			height: auto
+			margin: auto
+			display: block
+		h3
+			color: #336666
+			font-family: "Times New Roman PS - Bold MT"
+			font-size: 18px
+			font-weight: 600
+			// letter-spacing: 1.44px
+		p
+			color: #336666
+			font-family: "Times New Roman PSMT"
+			font-size: 16px
+			font-weight: 400
+			// letter-spacing: 1.28px
+	button
+		background-color: #ffff33
+		border: none
+		padding: 15px 20px
+		color: #3b3b3b
+		font-family: "Times New Roman PSMT"
+		font-size: 20px
+		font-weight: 400
+		// letter-spacing: 1.6px
+		display: block
+		margin: 70px auto 0
+		&:hover
+			background-color: #ffff7c
+			cursor: pointer
+
+.portfolio
+	padding: 55px 0 70px 0
+	background-color: #e1ffff
+	h2
+		text-align: center
+		color: #336666
+		font-size: 30px
+		font-weight: 600
+		// letter-spacing: 2.4px
+	p.text-top
+		margin: 25px 150px 45px 150px
+		text-align: center
+		color: #336666
+		font-family: "Times New Roman PSMT"
+		font-size: 16px
+		font-weight: 400
+		// letter-spacing: 1.28px
+	.block-img
+		text-align: center
+		figure
+			display: inline-block
+			position: relative
+			img
+				padding: 0
+				margin: -2px
+				width: auto
+				height: 200px
+				transition: all 0.5s
+			i
+				position: absolute
+				font-size: 50px
+				color: #fff
+				opacity: 0
+				left: 50%
+				top: 40%
+				transform: translate(-50%, -50%)
+				transition: all 0.5s
+			&:hover
+				cursor: pointer
+				background-color: rgba(255, 255, 255, 1)
+				img
+					opacity: 0.1
+				i
+					left: 50%
+					top: 50%
+					opacity: 1
+					color: #84a4a4
+
+.contacts
+	padding: 55px 0 70px 0
+	h2
+		color: #336666
+		font-size: 30px
+		font-weight: 600
+		// letter-spacing: 2.4px
+	form
+		input
+			width: 377px
+			height: 42px
+			padding: 5px 15px
+			margin-top: 10px
+			background-color: #e1ffff
+			border: none
+			color: #658585
+		textarea
+			width: 100%
+			height: 200px
+			padding: 5px 15px
+			margin-top: 10px
+			background-color: #e1ffff
+			border: none
+			color: #658585
+		button
+			padding: 15px 35px
+			margin-top: 10px
+			background-color: #ffff33
+			border: none
+			color: #3b3b3b
+			font-family: "Times New Roman PSMT"
+			font-size: 20px
+			font-weight: 400
+			float: right
+			// letter-spacing: 1.6px
+			&:hover
+				cursor: pointer
+				background-color: #ffff7c
+	p,
+	span
+		color: #336666
+		font-family: "Times New Roman PSMT"
+		font-size: 16px
+		font-weight: 400
+		// letter-spacing: 1.28px
+	span
+		line-height: 1.5
+		i
+			color: #336666
+			font-size: 20px
+			padding: 5px 5px 5px 5px
+
+.footer
+	padding: 40px 0 40px 0
+	text-align: center
+	background-color: #313131
+	span
+		color: #ffffff
+		font-family: "Times New Roman PSMT"
+		font-size: 16px
+		font-weight: 400
+		// letter-spacing: 1.28px
+	span.pos-left
+		margin-right: 30px
+	span.pos-center
+		margin-left: 30px
+		margin-right: 30px
+	button.pos-right
+		margin-left: 30px
+		border: 1px solid #fff
+		padding: 10px 20px
+		background-color: #313131
+		color: #ffffff
+		font-family: "Times New Roman PSMT"
+		font-size: 16px
+		font-weight: 400
+		&:hover
+			cursor: pointer
+			color: #ffff33
+			border: 1px solid #ffff33
+
+.go_to_top
+	opacity: 0
+	position: fixed
+	bottom: -150px
+	right: -150px
+	font-size: 50px
+	color: #909396
+	transition: all 0.5s
+	&:hover
+		cursor: pointer
+		color: #d4d4d4
+.go_to_top_active
+	opacity: 1
+	bottom: 50px
+	right: 50px
+	z-index: 90
+
+.modalOrder
+	display: none
+	position: fixed
+	z-index: 100
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow: auto
+	background-color: rgb(0, 0, 0)
+	background-color: rgba(0, 0, 0, 0.8)
+	.modal-content
+		background-color: #fefefe
+		margin: 100px auto 100px auto
+		padding: 70px
+		border: 1px solid #888
+		width: 80%
+		.closeOrder
+			color: #aaaaaa
+			float: right
+			font-size: 40px
+			font-weight: bold
+			&:hover,
+			&:focus
+				color: #000
+				text-decoration: none
+				cursor: pointer
+		.info
+			// padding-right: 150px
+			padding-top: 60px
+			h2,
+			p
+				color: #5a5a5a
+			h2
+				font-size: 35px
+			.modalOrderSocial
+				a
+					img
+						margin-right: 10px
+			.modalOrderPhone
+				span
+					font-weight: 600
+					font-family: Times New Roman, sans-serif
+					color: #0098ff
+					font-size: 35px
+			form.msgOrder
+				input
+					padding: 10px 20px
+					width: 400px
+					margin-bottom: 15px
+				span
+					color: #5a5a5a
+				textarea
+					width: 70%
+					height: 200px
+					padding: 10px 20px
+					// font-size: 18px
+				button	
+					padding: 10px 20px
+					margin-top: 15px
+					background-color: #ffff33
+					border: none
+					color: #3b3b3b
+					font-family: "Times New Roman PSMT"
+					font-size: 20px
+					font-weight: 400
+					// letter-spacing: 1.6px
+					&:hover
+						cursor: pointer
+						background-color: #ffff7c
+			.contentBlockHidden
+				max-height: 0px
+				overflow: hidden
+				transition: all 0.6s
+				h3
+					color: #336666
+					font-family: "Times New Roman PS - Bold MT"
+					font-size: 22px
+					font-weight: 600
+					margin: 20px 0 20px 0
+				form
+					input[type="checkbox"]
+						width: 15px
+						height: 15px
+						border-radius: 15px
+					select
+						padding: 10px 20px
+						background-color: #f0f0f0
+						border: none
+						width: 100%
+						option
+							background-color: #f0f0f0
+							font-size: 20px
+					.block-select
+						position: relative
+						display: inline-block
+						margin-bottom: 15px
+						width: 100%
+						select
+							display: inline-block
+							// width: 100%
+							cursor: pointer
+							padding: 10px 15px
+							outline: 0
+							border: 0
+							border-radius: 0
+							background: #e6e6e6
+							color: #7b7b7b
+							appearance: none
+							-webkit-appearance: none
+							-moz-appearance: none
+							text-overflow: ellipsis
+							padding-right: 50px
+							overflow: hidden
+							white-space: nowrap
+							&:-ms-expand
+								display: none
+							&:hover,
+							&:focus
+								color: #000
+								background: #ccc
+							&:hover ~ .select_arrow,
+							&:focus ~ .select_arrow
+								border-top-color: #000
+							&:disabled ~ .select_arrow
+								border-top-color: #ccc
+							&:disabled
+								opacity: 0.5
+								pointer-events: none
+						.select_arrow
+							position: absolute
+							top: 20px
+							right: 15px
+							width: 0
+							height: 0
+							pointer-events: none
+							border-style: solid
+							border-width: 8px 5px 0 5px
+							border-color: #7b7b7b transparent transparent transparent
+				.individualChoiceOfServices,
+				.additionalServices
+					padding: 10px
+					input
+						margin: 10px 20px
+					span
+						color: #5a5a5a
+				.individualChoiceOfServices
+					.writingUniqueText
+						width: 100px
+						margin: 0 10px 15px 0
+						// border: 1px solid #2aa1c0
+						border: none
+						background-color: #e6e6e6
+						padding: 5px
+						&:hover
+							background-color: #ccc
+				.individualChoiceOfServices,
+				.additionalServices
+					.control
+						display: block
+						position: relative
+						padding-left: 35px
+						margin-bottom: 15px
+						cursor: pointer
+						font-size: 16px
+						&:hover input:not([disabled]):checked ~ .control_indicator,
+						input:checked:focus ~ .control_indicator
+							background: #0e647d
+						input:checked ~ .control_indicator
+							background: #2aa1c0
+						input:disabled ~ .control_indicator
+							background: #e6e6e6
+							opacity: 0.6
+							pointer-events: none
+						input:checked ~ .control_indicator:after
+							display: block
+						input
+							position: absolute
+							z-index: -1
+							opacity: 0
+						.control_indicator
+							position: absolute
+							top: 2px
+							left: 0
+							height: 25px
+							width: 25px
+							line-height: 25px
+							padding-left: 5px
+							background: #e6e6e6
+							&:after
+								content: '\2713'
+								position: absolute
+								display: none
+								color: #fff
+								font-weight: bold
+								font-size: 20px
+					// &:hover input ~ .control_indicator,
+					// input:focus ~ .control_indicator
+					// 	background: #ccc
+					.control_indicator:hover
+						background: #ccc
+
+			
+				.totalAmount
+					text-align: right
+					.text
+						font-size: 20px
+					.number
+						margin: 0 10px
+						font-weight: 600
+						color: #0098ff
+						font-size: 42px
+				.stagesOfPayment
+					.stagesNumber
+						color: #0098ff
+						font-size: 20px
+						font-weight: bold
+			button.btnPrice
+				width: 70%
+				margin-top: 30px
+				margin-bottom: 30px
+				padding: 10px 20px
+				border: none
+				color: #3b3b3b
+				font-family: "Times New Roman PSMT"
+				font-size: 20px
+				font-weight: 400
+				background-color: #f0f0f0
+				&:hover
+					cursor: pointer
+					background-color: #d7d1d1
+
+.modalCall
+	display: none
+	position: fixed
+	z-index: 1
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow: auto
+	background-color: rgb(0, 0, 0)
+	background-color: rgba(0, 0, 0, 0.8)
+	.modal-content
+		background-color: #fefefe
+		margin: 100px auto 100px auto
+		padding: 70px
+		border: 1px solid #888
+		width: 80%
+		.closeCall
+			color: #aaaaaa
+			float: right
+			font-size: 40px
+			font-weight: bold
+			transition: all 0.5s
+			&:hover,
+			&:focus
+				color: #000
+				text-decoration: none
+				cursor: pointer
+		.info
+			// padding-right: 150px
+			padding-top: 60px
+			h2,
+			p
+				color: #5a5a5a
+			h2
+				font-size: 35px;
+			form
+				input
+					padding: 10px 20px
+					width: 400px
+				button	
+					padding: 10px 20px
+					margin-top: 15px
+					background-color: #ffff33
+					border: none
+					color: #3b3b3b
+					font-family: "Times New Roman PSMT"
+					font-size: 20px
+					font-weight: 400
+					// letter-spacing: 1.6px
+					&:hover
+						cursor: pointer
+						background-color: #ffff7c
+
+.stuck
+	position: fixed !important
+	top: 0
+	left: 0
+	z-index: 100
+
+.overlay
+	min-height: 100%
+	width: 0
+	position: fixed
+	z-index: 10000
+	left: 0
+	top: 0
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0, 0.95)
+	overflow-x: hidden
+	transition: 0.5s
+	padding-top: 40px
+	.overlay-content
+		position: relative
+		width: 100%
+		text-align: center
+		padding: 20px
+		a
+			color: #818181
+			display: block
+			font-size: 20px
+			padding: 10px
+			text-decoration: none
+			&:hover
+				background-color: #2a2a2a
+				color: #fff
+	.closebtn
+		color: #818181
+		padding: 40px
+		i
+			font-size: 40px
+		&:hover
+			color: #fff
+
+
+
+
+
+
+
+
+
+
+
+
+
+// border: 1px solid #000
+
+@import "media" // Always at the end
